@@ -9,28 +9,25 @@ import {
   ImageBg,
   HeroBtn,
   HeroTitleSecond,
-  HeroBtnLink
+  HeroBtnLink,
 } from "./Elements";
 
 export default function HeroSection() {
-
   return (
     <HeroContainer id="whereIsCargo">
       <HeroBg>
         <ImageBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-      <HeroTitleSecond>THE BEST DESIGNS</HeroTitleSecond>
+        <HeroTitleSecond>THE BEST DESIGNS</HeroTitleSecond>
 
-      <HeroTitleMain>Beauty in all shapes, <br /> sizes and colours</HeroTitleMain>
-
+        <HeroTitleMain>
+          Beauty in all shapes, <br /> sizes and colours
+        </HeroTitleMain>
 
         <HeroBtn>
-            <HeroBtnLink
-            >
-              BOOKING NOW!
-            </HeroBtnLink>
-          </HeroBtn>
+          <HeroBtnLink>BOOKING NOW!</HeroBtnLink>
+        </HeroBtn>
       </HeroContent>
       {/* <AboutUs/> */}
     </HeroContainer>

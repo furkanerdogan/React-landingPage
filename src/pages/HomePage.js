@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header/Header";
 import HeroSection from "../components/HeroSection/HeroSection";
+import Service from "../components/Service/Service";
 import Sidebar from "../components/Sidebar";
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header  toggle={toggle} />
      <HeroSection      />
+     <Service/>
 
      <div style={{height:"500px"}}>Page will come</div>
 
