@@ -1,0 +1,16 @@
+export const infoObject = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Nice Top Line",
+  headline: "Nice Head Line Head Line",
+  description: "descriptiondescriptiondescriptiondescriptiondescriptiondei",
+  buttonLabel: "Get started",
+  imgStart: false,
+  img: require("../../assests/images/pic5.svg"),
+  alt: "Car",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
