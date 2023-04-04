@@ -13,7 +13,7 @@ import {
 export default function Service() {
   return (
     <div id="services">
-      <ServicesContainer>
+      <ServicesContainer id="service">
         <ServicesMainTitle>Servislerimiz</ServicesMainTitle>
         <ServicesWrapper>
           <ServicesCard>

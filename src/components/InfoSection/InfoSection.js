@@ -28,27 +28,29 @@ export default function InfoSection({
 }) {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <button to="home">{buttonLabel}</button>
-                </BtnWrap>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
+      <div id="info" name="info2">
+        <InfoContainer lightBg={lightBg} id={id}>
+          <InfoWrapper>
+            <InfoRow imgStart={imgStart}>
+              <Column1>
+                <TextWrapper>
+                  <TopLine>{topLine}</TopLine>
+                  <Heading lightText={lightText}>{headline}</Heading>
+                  <Subtitle darkText={darkText}>{description}</Subtitle>
+                  <BtnWrap>
+                    <button to="home">{buttonLabel}</button>
+                  </BtnWrap>
+                </TextWrapper>
+              </Column1>
+              <Column2>
+                <ImgWrap>
+                  <Img src={img} alt={alt} />
+                </ImgWrap>
+              </Column2>
+            </InfoRow>
+          </InfoWrapper>
+        </InfoContainer>
+      </div>
     </>
   );
 }

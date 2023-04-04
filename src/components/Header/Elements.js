@@ -3,7 +3,7 @@ import { NavLink as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background-color: ${({scrollNav})=>(scrollNav?'white':'transparent')};
+  background-color: ${({ scrollNav }) => (scrollNav ? "white" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -15,8 +15,8 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 100;
-  -webkit-box-shadow: ${({scrollNav})=>(scrollNav?'10px 10px 22px -15px rgba(0, 0, 0, 0.75)':'none')};
-
+  -webkit-box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "10px 10px 22px -15px rgba(0, 0, 0, 0.75)" : "none"};
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -26,7 +26,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   text-align: center;
-position: relative;
+  position: relative;
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -34,10 +34,8 @@ position: relative;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-  .active{
-    
+  .active {
   }
- 
 `;
 export const NavLogo = styled(LinkR)`
   color: red;
@@ -88,13 +86,11 @@ export const Icon = styled.div`
 export const NavItem = styled.li`
   height: 80px;
 `;
-export const NavLinksP = styled.p`
 
-  
-  
-`;
-export const NavLinks = styled(LinkR)`
-  color: ${({scrollNav})=>(scrollNav?'black':'white')};
+export const NavLinksP = styled.p``;
+
+export const NavLinks = styled(LinkS)`
+  color: ${({ scrollNav }) => (scrollNav ? "black" : "white")};
 
   display: flex;
   align-items: center;
@@ -102,15 +98,16 @@ export const NavLinks = styled(LinkR)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  
- 
-  &:hover{
-    ${NavLinksP} {  
+  &.active {
+    color:  #01bf71; 
+
+  /* &:hover {
+    ${NavLinksP} {
       transition: all 0.2s ease-in-out;
-   margin-top:0.1px;
+      margin-top: 0.1px;
     }
-  }
-  
+  } */
+
 `;
 export const NavBtn = styled.nav`
   display: flex;
@@ -120,13 +117,12 @@ export const NavBtn = styled.nav`
   }
 `;
 
-
-
 export const NavBtnLink = styled.a`
   border-radius: 50px;
   white-space: nowrap;
   padding: 10px 22px;
-  background-color: ${({scrollNav})=>(scrollNav?'darkorange':'#211A1A')};
+  background-color: ${({ scrollNav }) =>
+    scrollNav ? "darkorange" : "#211A1A"};
   color: white;
 
   font-size: 16px;
