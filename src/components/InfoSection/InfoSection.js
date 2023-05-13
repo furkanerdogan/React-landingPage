@@ -1,4 +1,6 @@
 import React from "react";
+import imga from "../../assests/images/pic5.svg"; // Import the image file
+
 import {
   BtnWrap,
   Column1,
@@ -44,7 +46,7 @@ export default function InfoSection({
               </Column1>
               <Column2>
                 <ImgWrap>
-                  <Img src={img} alt={alt} />
+                  <Img src={imga} alt={alt} />
                 </ImgWrap>
               </Column2>
             </InfoRow>

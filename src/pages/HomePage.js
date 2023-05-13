@@ -4,7 +4,8 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import Service from "../components/Service/Service";
 import Sidebar from "../components/Sidebar";
 import InfoSection from "../components/InfoSection/InfoSection";
-import { infoObject } from "../components/InfoSection/Data";
+import { infoObject, infoObject2 } from "../components/InfoSection/Data";
+import Footer from "../components/Footer/Footer";
 
 export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,9 @@ export default function HomePage() {
       <Header toggle={toggle} />
       <HeroSection />
       <InfoSection {...infoObject} />
+      <InfoSection {...infoObject2} />
       <Service />
-
-      <div style={{ height: "500px" }}>Page will come</div>
+      <Footer />
     </>
   );
 }

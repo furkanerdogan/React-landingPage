@@ -14,3 +14,19 @@ export const infoObject = {
   primary: true,
   darkText: false,
 };
+export const infoObject2 = {
+  id: "about",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Nice Top Line",
+  headline: "Nice Head Line Head Line",
+  description: "descriptiondescriptiondescriptiondescriptiondescriptiondei",
+  buttonLabel: "Get started",
+  imgStart: true,
+  img: require("../../assests/images/pic5.svg"),
+  alt: "Car",
+  dark: false,
+  primary: false,
+  darkText: true,
+};

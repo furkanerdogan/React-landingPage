@@ -88,7 +88,7 @@ export default function Header({ toggle }) {
                 to="info"
                 exact="true"
                 spy={true}
-                offset={-50}
+                offset={-72}
                 smooth={true}
                 duration={1000}
                 // style={({ isActive }) =>
